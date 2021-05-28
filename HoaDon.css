@@ -1,28 +1,38 @@
-html,body{
-    height:100%;
+html,
+body {
+    height: 100%;
 }
-body{
-     padding: 0;
-     margin: 0;
-     background-color: pink;
-     font-family:Arial, Helvetica, sans-serif;
+body {
+    padding: 0;
+    margin: 0;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    background-color: #fe8888;
+    font-family: roboto;
 
-     @media (min-height: 580px) {
-         @include align-items(center);
-     }
-     
+    @media (min-height: 580px) {
+    @include align-items(center);
+    }
 }
 .container {
-    width: 100%;
-    max-width: 420px;
+    width: 960px;
+    border: 1px solid #333;
+    padding: 20px;
 }
-.HoaDon {
+.HoaDon{
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.10), 0 10px 10px rgba(0, 0, 0, 0.13);
-    margin: (50px 0px);
-    padding:(50px 30px 30px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.10),
+    0 10px 10px rgba(0, 0, 0, 0.13);
+    margin: 50px;
+    padding:50px ;
+    
+}
+header {
+    overflow: hidden;
+    margin: 60px;
+}
 
-   }
-    
-    
+
+

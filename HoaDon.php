@@ -1,4 +1,10 @@
 <?php
+include_once('DataProvider.php');
+
+$sqlHoaDon = "SELECT NgayLapHD TongTien TenHH DonGia SoLuong MAHD FROM hoadon hd join hanghoa hh join chitiethoadon ct on hd.MaHD=ct.MaHD and hh.MaHH=ct.MaHH ";
+if(isset($_REQUEST["MaHD"])){
+    $sqlHoaDon .= " WHERE  = ".$_REQUEST["MaHD"];
+}
 
 ?>
 <div id="content" class="container">
